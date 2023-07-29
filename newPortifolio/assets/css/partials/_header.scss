@@ -1,0 +1,307 @@
+
+.reader-logo{
+    width: 20%;
+   }
+.bg-home{
+    width: 100%;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    background-color:$primary-dark;
+    
+}
+.nav h3{
+    color: $white-normal;
+    margin-left: 20px;
+}
+
+
+#check-option{
+   position: absolute;
+  opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 40px; 
+}
+
+label span{
+ position: absolute;
+ display: block;
+ height: 3px;
+ width: 100%;
+ border-radius: 30px;
+ background-color: $white-normal;
+ transition: 0.25s ease-in-out;
+}
+label span:nth-child(1){
+  top: 0;
+}
+label span:nth-child(2){
+  top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+
+#check-option:checked + label span:nth-child(1){
+   transform: rotate(-45deg);
+   top: 8px;
+   
+}
+#check-option:checked + label span:nth-child(2){
+    opacity: 0;
+
+}
+#check-option:checked + label span:nth-child(3){
+  transform:  rotate(45deg);
+  top: 8px;
+}
+
+ul{
+    width: 50%;
+    display: flex;
+    color: $black-dark-2;
+    gap: 30px;
+    position: relative;
+}
+
+.navbar-off{
+    display: flex;
+}
+
+li{
+    transition: 0.8s;
+}
+
+li a:hover{
+    color: $equdor-normal;
+}
+
+
+.reader-logo{
+    margin: 30px;
+}
+
+.header-group{
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.header-i-text-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 110%;   
+}
+
+.header-i-text-button h3{
+    color: $white-normal;
+    font-size: 25px;
+    line-height: 150%;
+}
+
+.header-i-text-button h5{
+    width: 100%;
+    color: $white-normal;
+    font-size: 25px;
+    line-height: 150%;
+    text-align: left;
+
+    span{
+        color:$equdor-normal;
+    }
+}
+.group-social{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: flex;
+}
+
+.align-social{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    i{
+        transition: 1.3s;
+    }
+}
+.group-social a{
+   margin: 5px;
+   color: $equdor-normal;
+}
+.group-social i:hover{
+  color: $equdor-light;
+  transform: translateY(-8px) scale(1.1);  
+
+}
+
+.header-i-text-button p{
+    color: $black-dark-2;
+    margin-top: 20px;
+
+}
+
+.i-button{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.i-button button{
+    width: 150px;
+    height: 50px;
+    background-color: $equdor-normal;
+    border: 0;
+    color: $white-normal;
+    color:#06121e;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px -1px 17px -4px $equdor-normal;
+    border-radius: 200px;
+    transition: 1.3s;
+}
+
+.i-button button:hover{
+    transform: translate(0) scale(1.1);
+    background-color: $equdor-light;
+}
+
+.img-i{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.header-img-avatar{
+    width: 350px;
+    height: 350px;
+    background-color: $equdor-normal;
+    border-radius: 50%;
+    animation: avatar-anmation  2s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@keyframes avatar-anmation {
+    0%{
+       top: 20px;
+    }
+    50%{
+        top: -20px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 758px){
+    .reader-logo img{
+       width: 300px;
+    }
+    label{
+        display: block;
+    }
+    ul{ 
+        display: none;
+    }
+    
+     ul.url-mobile{
+       width: 100%;
+       height: 300px;
+       display: block;
+       color: #fff;
+       background-color: $primary-dark;
+       position: absolute;
+       top:100%;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       animation: navbar 1.3s;  
+   }
+
+   .navbar-off{
+      display: none;
+   }
+
+    .header-group{  
+       flex-direction: column;
+       .header-img-avatar{
+        width: 200px;
+        height: 200px;
+       }
+    }
+
+    .header-i-text-button h3, p{  
+        margin-top: 50%;
+        font-size: 20px;
+        text-align: center;
+
+     }
+     .group-social {
+        width: 100%;
+        justify-content: center;
+     }
+     .header-i-text-button h5{
+
+        text-align: center;
+     }
+    
+     .align-social{
+        justify-content: center;
+     }
+     .i-button {
+       display: flex;
+       justify-content: center;
+     }
+     .img-i{
+        top: 18%;
+
+     }
+}
+
+@keyframes navbar{
+    from{
+     opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+}
+
+
+

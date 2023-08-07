@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel&family=Merriweather:wght@300&family=Open+Sans:wght@300&family=Sora:wght@200;300;500;600&family=Tektur:wght@500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -16,8 +17,8 @@
    <body>
     <nav class="nav">
        <h3>Portifólio</h3>
-        <ul id="option-ul">
-            <li><a href="#">Ínicio</a></li>
+        <ul class="nav-links" id="option-ul">
+            <li><a href="#home">Ínicio</a></li>
             <li><a  href="#about">Sobre</a></li>
             <li><a  href="#services">Serviços</a></li>
             <li><a  href="#portifolio">Portifólio</a></li>
@@ -32,11 +33,12 @@
     </nav>
      <div class="bg-home">
         <reader>
+            <section id="home">
             <div class="header-group">
                 <div class="header-i-text-button" data-aos="fade-up" data-aos-delay="100">
-                 <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eum labore pariatur obcaecati alias vel quaerat.</h3>
-                 <h5>And I´m a <span class="multiple-text"></span></h5>
-                 <p>Uma mistura de Design, Desenvolvimento Frontend e habilidade profissional que vão destacar seu produto no mercado.</p>
+                 <h3>Ajudando as empresas a se destacarem seus produtos digitais de forma moderna e de alta qualidade.</h3>
+                 <h5>Desenvolvedor <span class="multiple-text"></span></h5>
+                 <p>Uma mistura de, Desenvolvimento Frontend com Backend que vai destacar seu produto no mercado.</p>
                  <div class="group-social">
                     <div class="align-social">
                       <a href="#">
@@ -59,12 +61,14 @@
                      </div>
                  </div>
                 </div>
-                <div class="img-i">
-                    <div class="header-img-avatar" data-aos="fade-down" data-aos-delay="250">
-                      <img src="" alt="">
+                <div class="avatar">
+                    <div class="img-avatar-i">
+                        <img data-aos="fade-down" data-aos-delay="250" src="assets/images/home.png" alt="imagem home">
                     </div>
+                      
                  </div>
             </div>
+        </section>
         </reader>
      </div>
     <main>
@@ -74,15 +78,19 @@
                     <div class="group-col">
                         <div class="avatar-i" data-aos="fade-right" data-aos-delay="100">
                             <div class="img-avatar">
-                               <img src="" alt="">
+                               <img src="assets/images/about.png" alt=" imagem de avatar">
                             </div>
                         </div>
                         <div class="text-buutton-i" data-aos="fade-right" >
-                          <h1>About <strong>Me</strong></h1>
-                          <h3>Frontend Developer</h5>
-                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe libero natus ut voluptatibus repudiandae veniam, illum vitae architecto aspernatur, harum reprehenderit delectus minima optio. Tempore temporibus impedit consequuntur quae.</p>
+                          <h1>Sobre <strong>Mim</strong></h1>
+                          <h3>Desenvolvedor FullStack</h5>
+                          <p>Desenvolvedor há mais de 34 anos. Desenvolvi varios projetos pessoais e profissionais web sites e aplicativos mobiles. 
+                            Buscando sempre as melhores soluções para a criação dos projetos. Estou sempre me atualizando para acompanhar a exigência do mercado. </p>
                           <div class="card-button">
-                              <button>Real More</button>
+                            <a href="#contact">
+                             <button>Entre em contato</button>
+                            </a>
+                              
                           </div>
                         </div>
                     </div>
@@ -91,44 +99,44 @@
         </section>
         <section id="services">
             <div class="col-i">
-                <h1>Ours <strong>Services</strong></h1>
+                <h1>Meus <strong>Serviços</strong></h1>
                 <div class="cards container top">
                     <div class="card-services flexDirection" data-aos="fade-up" data-aos-delay="100" >
                         <div class="icone">
                             <img src="assets/images/icons8-programação-50.png" alt="Icone programação">
                         </div>
-                        <h2>Web Development</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia molestiae odit accusamus in ex
-                        nesciunt ad magnam eligendi, earum ullam.</p>
+                        <h2>Desenvolvimento Web </h2>
+                        <p>Conhecimentos em diversas tecnologias mais atuais do mercado, na criação de projetos web respansivos.</p>
                         <div class="card-button">
-                              <button>Read More</button>
+                              <button>Saber mais</button>
                         </div>
                     </div>
                     <div class="card-services  flexDirection" data-aos="fade-down" data-aos-delay="200" >
                         <div class="icone">
                             <img src="assets/images/icons8-celular-50.png" alt="Icone programação">
                         </div>
-                        <h2>Web mobile</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia molestiae odit accusamus in ex
-                        nesciunt ad magnam eligendi, earum ullam saepe et.</p>
+                        <h2>Desenvolvimento Mobile</h2>
+                        <p>Desenvolvendo soluções de aplicatvos na palma da mão. Utilizando diversas tecnologias disponiveis no mercado.</p>
                         <div class="card-button">
-                          <button>Read More</button>
+                          <button>Saber mais</button>
                       </div>
                  </div>
             </div>
         </section>
        <section id="portifolio">
         <div class="col-i">
-           <h1>Last <strong>Project</strong></h1>
+           <h1>Meus <strong>Projetos</strong></h1>
             <div class="cards container top">
                <div class="card" data-aos="fade-up" data-aos-delay="150">
-                   <img src="assets/images/home-office-g5baa88f88_1280.jpg" alt="Projeto de imagem">
+                   <img class="align-img" src="assets/images/project.png" alt="Projeto de imagem">
                    <div class="img-info">
                       <h5>Website Respansive</h5>
-                      <p>Lorem ipsum, dolor sit amet consecteturvel repellendus sunt.</p>
-                      <div class="edit">
-                        <i class="fa-brands fa-edit fa-2x"></i>
-                      </div>
+                      <p>Projeto desenvolvido com um desiner inovador no ramo de barbearia .</p>
+                      <a href="https://projeto-barbeiro.vercel.app/" target="_blank" style="color: #000">
+                        <div class="edit">
+                            <i class="fa-brands fa-edit fa-2x"></i>
+                          </div>
+                      </a>
                    </div>
                </div>
                <div class="card" data-aos="fade-up" data-aos-delay="250">
@@ -189,16 +197,16 @@
    <section id="contact">
       <div class="contact">
         <div class="col-i">
-            <h1 data-aos="fade-down" data-aos-delay="100">Contact <strong>Me</strong></h1>
+            <h1 data-aos="fade-down" data-aos-delay="100">Entre em <strong>Contato</strong></h1>
             <div class="contact-group top" data-aos="fade-up" data-aos-delay="300">
                 <form method="post">
                   <div class="group-input">
-                    <input type="text" name="name" placeholder="Full Name"/>
-                    <input type="email" name="email" placeholder="Email Address"/>
+                    <input type="text" name="name" placeholder="Nome"/>
+                    <input type="email" name="email" placeholder="Email"/>
                   </div>
                   <div class="group-input">
-                    <input type="text" name="mobile" placeholder="Mobile Number"/>
-                    <input type="email" name="Subject" placeholder="Email Subject"/>
+                    <input type="number" name="mobile" placeholder="Número"/>
+                    <input type="email" name="Subject" placeholder="Segundo Email"/>
                   </div>
                   <div class="group-input">
                     <textarea placeholder="Your Message" name="message" rows="10"></textarea>
@@ -208,8 +216,23 @@
                 </div>
                 </form>
             </div>
-      </div>
-   </section>
+       </div>
+       <div class="message-group">
+        <a href="#">
+            <div class="whatzap-i" data-aos="fade-right" data-aos-delay="100">
+              <i class="fa fa-envelope"></i>
+               <P>profissao33@gmail.com</P>
+            </div>
+          </a>
+        <a href="#">
+          <div class="email-i"  data-aos="fade-right" data-aos-delay="250">
+            <img src="assets/images/icons8-celular-50.png" alt="Celular para contato">
+              <P>(14) 99708-7974</P>
+          </div>
+          </a>
+       </div>
+    </div>
+    </section>
     </main>
     <footer class="footer">
         <div class="footer-group">
@@ -219,6 +242,7 @@
             </div>
       </div>
     </footer>
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="assets/js/scripts.js"></script>
   </body>

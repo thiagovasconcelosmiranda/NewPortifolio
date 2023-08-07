@@ -52,14 +52,19 @@ strong{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center; 
 }
+
 .avatar-i .img-avatar{
-    width: 300px;
-    height: 300px;
-    border: 10px solid $equdor-normal;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img{
+        width: 95%;
+    }
 }
 
 .text-buutton-i{
@@ -67,6 +72,7 @@ strong{
     justify-content: center;
     flex-direction: column;
 }
+
 .text-buutton-i h1{
     width: 100%;
     text-align: left;
@@ -81,6 +87,8 @@ strong{
     color: $white-light-2;
     margin-top: 10px;
     max-width: 80%;
+    line-height: 150%;
+    
 }
 
 .text-buutton-i .card-button{
@@ -126,6 +134,11 @@ strong{
         height: 100%;
         transition: 2s;
     }
+    .align-img{
+        width: 110%;
+        height: 110%;
+    }
+
 
 }
 
@@ -133,8 +146,8 @@ strong{
     top: -5px;
   }
   .card:hover img{
-      width: 110%;
-      height: 110%;
+      width: 115%;
+      height: 115%;
   } 
 
 .text-buutton-i .card-button button{
@@ -162,6 +175,11 @@ strong{
     img{
         width: 100%;
         height: 100%;
+    }
+
+    .align-img{
+        width: 120%;
+        height: 1200%;
     }
 
     .icone{
@@ -309,6 +327,44 @@ p{
     height: auto;
     display: flex;
     flex-direction: column;
+
+    .message-group{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatzap-i, .email-i{
+        width: 500;
+        height: 200px;
+        border: 2px solid $equdor-normal;
+        margin: 30px;
+        display: flex;
+        padding: 0 25px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.8s;
+       img{
+        width: 50%;
+       }
+       p{
+        margin-top: 30%;
+       }
+
+       i{
+        font-size: 40px;
+        color:$equdor-normal
+       }
+    }
+
+  }
+
+  .email-i:hover, .whatzap-i:hover{
+    background: 
+    linear-gradient(to bottom, rgba(22, 207, 198, 0.863), rgba(16, 110, 98, 0.1));
   }
   
   .contact-group{
@@ -326,7 +382,7 @@ p{
      margin: 10px;
      display: flex;
      justify-content: center;
-     margin-top: 30px;
+     margin-top: 20px;
   
      input{
       margin: 8px;
@@ -334,34 +390,67 @@ p{
       height: 30px;
       padding: 5px;
       border: 0;
-      background-color: $black-dark-2;
       color: $white-light;
+      background-color: $primary-normal;
       outline: none;
+      border-bottom: 2px solid $equdor-light;
+      transition: 0.8s ease-in-out;
    }
+
+   input:focus{
+    transform:  translateY(-15px);
+    animation: border-animation 1s ;
+   }
+
    ::-webkit-input-placeholder {
-      color: $black-dark-4;
+      color: $white-light-3;
       font-weight: bold;
    }
+   
+   @keyframes border-animation{
+     from{
+      border-bottom: 3px solid $equdor-light;
+     }
+
+     to{
+        border-bottom: 3px solid $equdor-normal;
+     }
+   }
+   
   
    textarea{
       width: 93%;
       color: $white-light;
-      background-color: $black-dark-2;
+      background-color: $primary-normal;
       outline: none;
       border: 0;
       padding: 10px;
+      border: 2px solid $equdor-light;
+      transition: 2s ease-in-out;
+   }
+
+   textarea:focus{
+     transform:  translateY(-15px);
+     border: 2px solid $equdor-normal;
    }
   
    button{
       width: 150px;
-      height: 40px;
+      height: 50px;
       margin-top: 10px;
       background-color: $equdor-normal;
       border: 0;
-      padding: 0 25px;
+      padding: 20 25px;
       border-radius: 25px;
       box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
       cursor: pointer;
+      transition: 1s;
+   }
+
+   
+   button:hover{
+     transform: translate(0) scale(1.1);
+     background-color: $equdor-light;
    }
   }
    
@@ -444,14 +533,16 @@ p{
     .avatar-i .img-avatar{
         width: 200px;
         height: 200px;
+
+        img{
+            width: 90%;
+        }
     }
     .contact-group{
         margin-top: 20%;
       }
 
     .group-input{
-        width: 95%;
-        width: auto;
         margin: 3px;
         display: flex;
         justify-content: center;
@@ -459,13 +550,12 @@ p{
         align-items: center;
      
         input{
-         width: 380px;
+         width: 385px;
          margin: 8px;
-         max-width: 97%;
-       }
-       
-    }
-     
-    
-   
+       }  
+    }  
+    .message-group{
+        width: 50%;
+        flex-direction: column;
+    } 
 }

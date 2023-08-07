@@ -99,7 +99,7 @@ li {
   transition: 0.8s;
 }
 
-li a:hover {
+li a:hover, li a:focus {
   color: rgb(16, 223, 223);
 }
 
@@ -194,6 +194,7 @@ li a:hover {
   box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
   border-radius: 200px;
   transition: 1.3s;
+  animation: button-animation 2s infinite;
 }
 
 .i-button button:hover {
@@ -201,24 +202,37 @@ li a:hover {
   background-color: rgb(94, 173, 173);
 }
 
-.img-i {
+@keyframes button-animation {
+  from {
+    background-color: rgb(94, 173, 173);
+  }
+  to {
+    background-color: rgb(16, 223, 223);
+  }
+}
+.avatar {
   width: 100%;
-  height: 600px;
-  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10%;
 }
 
-.header-img-avatar {
-  width: 350px;
-  height: 350px;
-  background-color: rgb(16, 223, 223);
-  border-radius: 50%;
-  animation: avatar-anmation 2s infinite;
+.img-avatar-i {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.img-avatar-i img {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  width: 70%;
+  animation: avatar-anmation 3s infinite;
 }
 
 @keyframes avatar-anmation {
@@ -226,7 +240,7 @@ li a:hover {
     top: 20px;
   }
   50% {
-    top: -20px;
+    top: 10px;
   }
   100% {
     top: 20px;
@@ -285,8 +299,11 @@ li a:hover {
     display: flex;
     justify-content: center;
   }
-  .img-i {
-    top: 18%;
+  .img-avatar-i {
+    margin-top: 50%;
+  }
+  .img-avatar-i img {
+    width: 45%;
   }
 }
 @keyframes navbar {
@@ -353,10 +370,15 @@ strong {
 }
 
 .avatar-i .img-avatar {
-  width: 300px;
-  height: 300px;
-  border: 10px solid rgb(16, 223, 223);
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.avatar-i .img-avatar img {
+  width: 95%;
 }
 
 .text-buutton-i {
@@ -380,6 +402,7 @@ strong {
   color: #d8d4da;
   margin-top: 10px;
   max-width: 80%;
+  line-height: 150%;
 }
 
 .text-buutton-i .card-button {
@@ -423,14 +446,18 @@ strong {
   height: 100%;
   transition: 2s;
 }
+.card .align-img {
+  width: 110%;
+  height: 110%;
+}
 
 .card:hover .img-info {
   top: -5px;
 }
 
 .card:hover img {
-  width: 110%;
-  height: 110%;
+  width: 115%;
+  height: 115%;
 }
 
 .text-buutton-i .card-button button {
@@ -459,6 +486,10 @@ strong {
 .card-services img {
   width: 100%;
   height: 100%;
+}
+.card-services .align-img {
+  width: 120%;
+  height: 1200%;
 }
 .card-services .icone {
   height: 40px;
@@ -593,6 +624,39 @@ strong {
   display: flex;
   flex-direction: column;
 }
+.contact .message-group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .whatzap-i, .contact .email-i {
+  width: 500;
+  height: 200px;
+  border: 2px solid rgb(16, 223, 223);
+  margin: 30px;
+  display: flex;
+  padding: 0 25px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.8s;
+}
+.contact .whatzap-i img, .contact .email-i img {
+  width: 50%;
+}
+.contact .whatzap-i p, .contact .email-i p {
+  margin-top: 30%;
+}
+.contact .whatzap-i i, .contact .email-i i {
+  font-size: 40px;
+  color: rgb(16, 223, 223);
+}
+
+.email-i:hover, .whatzap-i:hover {
+  background: linear-gradient(to bottom, rgba(22, 207, 198, 0.863), rgba(16, 110, 98, 0.1));
+}
 
 .contact-group {
   width: 100%;
@@ -609,7 +673,7 @@ strong {
   margin: 10px;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .group-input input {
   margin: 8px;
@@ -617,32 +681,57 @@ strong {
   height: 30px;
   padding: 5px;
   border: 0;
-  background-color: #707072;
   color: #fefbff;
+  background-color: #06121e;
   outline: none;
+  border-bottom: 2px solid rgb(94, 173, 173);
+  transition: 0.8s ease-in-out;
+}
+.group-input input:focus {
+  transform: translateY(-15px);
+  animation: border-animation 1s;
 }
 .group-input ::-webkit-input-placeholder {
-  color: #58585c;
+  color: rgb(185, 184, 183);
   font-weight: bold;
+}
+@keyframes border-animation {
+  from {
+    border-bottom: 3px solid rgb(94, 173, 173);
+  }
+  to {
+    border-bottom: 3px solid rgb(16, 223, 223);
+  }
 }
 .group-input textarea {
   width: 93%;
   color: #fefbff;
-  background-color: #707072;
+  background-color: #06121e;
   outline: none;
   border: 0;
   padding: 10px;
+  border: 2px solid rgb(94, 173, 173);
+  transition: 2s ease-in-out;
+}
+.group-input textarea:focus {
+  transform: translateY(-15px);
+  border: 2px solid rgb(16, 223, 223);
 }
 .group-input button {
   width: 150px;
-  height: 40px;
+  height: 50px;
   margin-top: 10px;
   background-color: rgb(16, 223, 223);
   border: 0;
-  padding: 0 25px;
+  padding: 20 25px;
   border-radius: 25px;
   box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
   cursor: pointer;
+  transition: 1s;
+}
+.group-input button:hover {
+  transform: translate(0) scale(1.1);
+  background-color: rgb(94, 173, 173);
 }
 
 .footer {
@@ -717,12 +806,13 @@ strong {
     width: 200px;
     height: 200px;
   }
+  .avatar-i .img-avatar img {
+    width: 90%;
+  }
   .contact-group {
     margin-top: 20%;
   }
   .group-input {
-    width: 95%;
-    width: auto;
     margin: 3px;
     display: flex;
     justify-content: center;
@@ -730,9 +820,12 @@ strong {
     align-items: center;
   }
   .group-input input {
-    width: 380px;
+    width: 385px;
     margin: 8px;
-    max-width: 97%;
+  }
+  .message-group {
+    width: 50%;
+    flex-direction: column;
   }
 }
 body {

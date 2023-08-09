@@ -96,7 +96,7 @@ strong{
 }
 
 .cards{
-    width: 90%;
+    width: 70%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -115,12 +115,12 @@ strong{
 
 
 .card{
-    width: 100%;
-    height: 280px;
+    width: 80%;
+    height: 240px;
     background-color: $black-dark-2;
     background: 
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    border-radius: 25px;
+    border-radius: 5px;
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -131,7 +131,7 @@ strong{
 
     img{
         width: 100%;
-        height: 100%;
+        height: 110%;
         transition: 2s;
     }
     .align-img{
@@ -140,6 +140,20 @@ strong{
     }
 
 
+}
+.responsive{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobile{
+    border-radius: 10px;
+    width: 250px;
+    height: 500px;
 }
 
 .card:hover .img-info {
@@ -494,7 +508,14 @@ p{
 @media screen and (max-width: 758px){
     .cards{
         flex-direction: column; 
+        .card{
+            width: 100%;
+        }
     } 
+
+    .responsive{
+        width: 100%;
+    }
     
     .text-buutton-i p{
         font-size: 16px;
@@ -550,12 +571,22 @@ p{
         align-items: center;
      
         input{
-         width: 385px;
+         width: 100%;
          margin: 8px;
        }  
     }  
     .message-group{
+        display: flex;
         width: 50%;
         flex-direction: column;
     } 
+}
+
+@media screen and (max-width: 400px) {
+     .col-i{
+        width: 100%;
+        h1{
+           font-size: 16px;
+        }
+     }
 }

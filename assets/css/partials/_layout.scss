@@ -129,11 +129,49 @@ strong{
     position: relative;
     margin-top: 20px;
 
-    img{
-        width: 100%;
+
+    
+    .img-1{
+        width: 110%;
         height: 110%;
-        transition: 2s;
+        background: 
+        linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/imobiliaria.png);
+        background-size: cover;
+        transition: 1s;
     }
+    .img-2{
+        width: 110%;
+        height: 110%;
+        background: 
+        linear-gradient(to bottom, rgba(10, 12, 12, 0.623), rgba(16, 110, 98, 0.1)), url(/assets/images/clonegoogle.png);
+        background-size: cover;
+        transition: 1s;
+    }
+    .img-3{
+        width: 110%;
+        height: 110%;
+        background: 
+        linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/thservices.jpg);
+        background-size: cover;
+        transition: 1s;
+    }
+    .img-4{
+        width: 110%;
+        height: 110%;
+        background: 
+        linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/project-babearia.png);
+        background-size: cover;
+        transition: 1s;
+    }
+    .img-5{
+        width: 110%;
+        height: 110%;
+        background: 
+        linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(9, 82, 71, 0.199)), url(/assets/images/dsin.png);
+        background-size: cover;
+        transition: 1s;
+    }
+    
     .align-img{
         width: 110%;
         height: 110%;
@@ -152,8 +190,8 @@ strong{
 
 .mobile{
     border-radius: 10px;
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: 520px;
 }
 
 .card:hover .img-info {
@@ -193,13 +231,12 @@ strong{
 
     .align-img{
         width: 120%;
-        height: 1200%;
+        height: 120%;
     }
 
     .icone{
         height: 40px;
      }
-
 
      
  h2{
@@ -334,6 +371,14 @@ p{
         }
     }
 
+}
+.cards .card:hover .img-1, 
+.cards .card:hover .img-2,
+.cards .card:hover .img-3,
+.cards .card:hover .img-4,
+.cards .card:hover .img-5{
+    width: 115%;
+    height: 115%;
 }
 
 .contact{

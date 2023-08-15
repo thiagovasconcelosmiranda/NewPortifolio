@@ -443,9 +443,10 @@ strong {
 }
 .card .img-1 {
   width: 110%;
-  height: 110%;
+  height: 102%;
   background: linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/imobiliaria.png);
   background-size: cover;
+  background-repeat: no-repeat;
   transition: 1s;
 }
 .card .img-2 {
@@ -453,6 +454,7 @@ strong {
   height: 110%;
   background: linear-gradient(to bottom, rgba(10, 12, 12, 0.623), rgba(16, 110, 98, 0.1)), url(/assets/images/clonegoogle.png);
   background-size: cover;
+  background-repeat: no-repeat;
   transition: 1s;
 }
 .card .img-3 {
@@ -460,6 +462,7 @@ strong {
   height: 110%;
   background: linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/thservices.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   transition: 1s;
 }
 .card .img-4 {
@@ -467,6 +470,7 @@ strong {
   height: 110%;
   background: linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/project-babearia.png);
   background-size: cover;
+  background-repeat: no-repeat;
   transition: 1s;
 }
 .card .img-5 {
@@ -474,6 +478,7 @@ strong {
   height: 110%;
   background: linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(9, 82, 71, 0.199)), url(/assets/images/dsin.png);
   background-size: cover;
+  background-repeat: no-repeat;
   transition: 1s;
 }
 .card .align-img {
@@ -828,6 +833,9 @@ strong {
   }
   .cards .card {
     width: 100%;
+  }
+  .cards .card .img {
+    width: 20%;
   }
   .responsive {
     width: 100%;

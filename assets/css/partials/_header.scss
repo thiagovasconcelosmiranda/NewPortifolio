@@ -1,17 +1,14 @@
-
-.reader-logo{
+.reader-logo {
     width: 20%;
-   }
-.bg-home{
+}
+
+header {
     width: 100%;
     height: 100vh;
-}
-header{
-    width: 100%;
-    height: 600px;
     position: relative;
 }
-.nav{
+
+.nav {
     width: 100%;
     height: 70px;
     display: flex;
@@ -19,62 +16,68 @@ header{
     align-items: center;
     z-index: 1;
     position: fixed;
-    background-color:$primary-dark;
-    
+    background-color: $primary-dark;
+
 }
-.nav h3{
+
+.nav h3 {
     color: $white-normal;
     margin-left: 20px;
 }
 
 
-#check-option{
-   position: absolute;
-  opacity: 0;
+#check-option {
+    position: absolute;
+    opacity: 0;
 }
 
-label{
+label {
     cursor: pointer;
     position: relative;
     display: none;
     width: 30px;
-    height: 40px; 
+    height: 40px;
 }
 
-label span{
- position: absolute;
- display: block;
- height: 3px;
- width: 100%;
- border-radius: 30px;
- background-color: $white-normal;
- transition: 0.25s ease-in-out;
+label span {
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: $white-normal;
+    transition: 0.25s ease-in-out;
 }
-label span:nth-child(1){
-  top: 0;
+
+label span:nth-child(1) {
+    top: 0;
 }
-label span:nth-child(2){
-  top: 8px;
+
+label span:nth-child(2) {
+    top: 8px;
 }
-label span:nth-child(3){
+
+label span:nth-child(3) {
     top: 16px;
 }
 
-#check-option:checked + label span:nth-child(1){
-   transform: rotate(-45deg);
-   top: 8px;
-   
+#check-option:checked+label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+
 }
-#check-option:checked + label span:nth-child(2){
+
+#check-option:checked+label span:nth-child(2) {
     opacity: 0;
 
 }
-#check-option:checked + label span:nth-child(3){
-  transform:  rotate(45deg);
-  top: 8px;
+
+#check-option:checked+label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
 }
 
-ul{
+ul {
     width: 50%;
     display: flex;
     color: $black-dark-2;
@@ -82,25 +85,26 @@ ul{
     position: relative;
 }
 
-.navbar-off{
+.navbar-off {
     display: flex;
 }
 
-li{
+li {
     transition: 0.8s;
 }
 
-li a:hover, li a:focus{
-    color: $equdor-normal;
+li a:hover,
+li a:focus {
+    color: $equador-normal;
 }
 
 
 
-.reader-logo{
+.reader-logo {
     margin: 30px;
 }
 
-.header-group{
+.header-group {
     width: 80%;
     height: 100vh;
     position: absolute;
@@ -112,7 +116,7 @@ li a:hover, li a:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
 }
 
 
@@ -120,206 +124,245 @@ li a:hover, li a:focus{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 110%;   
+    width: 110%;
 }
 
-.header-i-text-button h3{
+.header-i-text-button h3 {
     color: $white-normal;
     font-size: 25px;
     line-height: 150%;
 }
 
-.header-i-text-button h5{
+.header-i-text-button h5 {
     width: 100%;
     color: $white-normal;
     font-size: 25px;
     line-height: 150%;
     text-align: left;
 
-    span{
-        color:$equdor-normal;
+    span {
+        color: $equador-normal;
     }
 }
-.group-social{
+
+.group-social {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-direction: flex;
 }
 
-.align-social{
+.align-social {
     display: flex;
     justify-content: left;
     width: 100%;
-    i{
+
+    i {
         transition: 1.3s;
     }
 }
-.group-social a{
-   margin: 5px;
-   color: $equdor-normal;
+
+.group-social a {
+    margin: 5px;
+    color: $equador-normal;
 }
-.group-social i:hover{
-  color: $equdor-light;
-  transform: translateY(-8px) scale(1.1);  
+
+.group-social i:hover {
+    color: $equador-light;
+    transform: translateY(-8px) scale(1.1);
 
 }
 
-.header-i-text-button p{
+.header-i-text-button p {
     color: $black-dark-2;
     margin-top: 20px;
 
 }
 
-.i-button{
+.i-button {
     margin-top: 30px;
     width: 100%;
     height: auto;
 }
 
-.i-button button{
+.i-button button {
     width: 150px;
     height: 50px;
-    background-color: $equdor-normal;
+    background-color: $equador-normal;
     border: 0;
     color: $white-normal;
-    color:#06121e;
+    color: #06121e;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0px -1px 17px -4px $equdor-normal;
+    box-shadow: 0px -1px 17px -4px $equador-normal;
     border-radius: 200px;
     transition: 1.3s;
     animation: button-animation 2s infinite;
 }
 
-.i-button button:hover{
+.i-button button:hover {
     transform: translate(0) scale(1.1);
-    background-color: $equdor-light;
+    background-color: $equador-light;
 }
+
 @keyframes button-animation {
-    from{
-        background-color: $equdor-light;
+    from {
+        background-color: $equador-light;
     }
-    to{
-        background-color: $equdor-normal;
+
+    to {
+        background-color: $equador-normal;
     }
 }
 
-.avatar{
+.avatar {
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -10%;
 }
 
-.img-avatar-i{
+.img-avatar-i {
     width: 100%;
     height: 100%;
     position: relative;
 
-    img{
+    .avatar-image-circle {
         position: absolute;
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0;
         margin: auto;
-        width: 70%;
-        animation:avatar-anmation 3s infinite;
-    }     
+        bottom: 0;
+        animation: avatar-animation 3s infinite;
+        border: 8px solid $equador-normal;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -5px 5px 25px $equador-light;
+        
+        img {
+            width:105%;
+            animation:  image-animation-2 3s;
+            animation-delay: 1s;
+        }
+    }
 }
 
-@keyframes avatar-anmation {
+@keyframes image-animation-2 {
     0%{
-       top: 20px;
+       transform: scale(1.10);
     }
+
     50%{
-        top: 10px;
-    }
-    100%{
-        top: 20px;
+        transform: scale(1);
     }
 }
 
 
-@media screen and (max-width: 758px){
-    .reader-logo img{
-       width: 300px;
+@keyframes avatar-animation {
+    0% {
+        top: 60px;
     }
-    label{
+
+    50% {
+        top: 30px;
+    }
+
+    100% {
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .reader-logo img {
+        width: 300px;
+    }
+
+    label {
         display: block;
     }
-    ul{ 
+
+    ul {
         display: none;
     }
-    
-     ul.url-mobile{
-       width: 100%;
-       height: 300px;
-       display: block;
-       color: #fff;
-       background-color: $primary-dark;
-       position: absolute;
-       top:100%;
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-       align-items: center;
-       animation: navbar 1.3s;  
-   }
 
-   .navbar-off{
-      display: none;
-   }
-
-    .header-group{  
-       flex-direction: column;
-       .header-img-avatar{
-        width: 200px;
-        height: 200px;
-       }
+    ul.url-mobile {
+        width: 100%;
+        height: 300px;
+        display: block;
+        color: #fff;
+        background-color: $primary-dark;
+        position: absolute;
+        top: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        animation: navbar 1.3s;
     }
 
-    .header-i-text-button h3, p{  
+    .navbar-off {
+        display: none;
+    }
+
+    .header-group {
+        flex-direction: column;
+
+        .header-img-avatar {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .header-i-text-button h3,
+    p {
         margin-top: 50%;
         font-size: 20px;
         text-align: center;
 
-     }
-     .group-social {
+    }
+
+    .group-social {
         width: 100%;
         justify-content: center;
-     }
-     .header-i-text-button h5{
+    }
+
+    .header-i-text-button h5 {
 
         text-align: center;
-     }
-    
-     .align-social{
+    }
+
+    .align-social {
         justify-content: center;
-     }
-     .i-button {
-       display: flex;
-       justify-content: center;
-     }
-     .img-avatar-i{
+    }
+
+    .i-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-avatar-i {
         margin-top: 50%;
-        img{
+
+        img {
             width: 45%;
         }
-     }
-}
-
-@keyframes navbar{
-    from{
-     opacity: 0;
-    }
-    to{
-      opacity: 1;
     }
 }
 
+@keyframes navbar {
+    from {
+        opacity: 0;
+    }
 
-
+    to {
+        opacity: 1;
+    }
+}

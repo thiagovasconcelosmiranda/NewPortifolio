@@ -1,643 +1,717 @@
- 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 3.3px;
-}
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 3.3px;
+ }
 
-.services{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+ .services {
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+ }
 
-.col-i {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 80px;
-    
-}
+ .col-i {
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     margin-top: 80px;
+ }
 
-.col-i  h1, .services h1{
-    text-align: center;
+ .col-i h1,
+ .services h1 {
+     text-align: center;
      font-size: 40px;
      color: $white-normal;
-}
+ }
 
-strong{
-    color: $equdor-normal;
-}
+ strong {
+     color: $equador-normal;
+ }
 
-.about{
- width: 98.7%;
- height:auto;
- justify-content: center;
- justify-content: center;
- align-items: center;
-}
+ .about {
+     width: 98.7%;
+     height: auto;
+     justify-content: center;
+     justify-content: center;
+     align-items: center;
+ }
 
-.group-col{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.avatar-i{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center; 
-}
-
-.avatar-i .img-avatar{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    img{
-        width: 95%;
-    }
-}
-
-.text-buutton-i{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.text-buutton-i h1{
-    width: 100%;
-    text-align: left;
-    margin-top: 10px;
-}
-.text-buutton-i h3{
-    color: $white-light;
-    font-weight: bold;
-}
-
-.text-buutton-i p{
-    color: $white-light-2;
-    margin-top: 10px;
-    max-width: 80%;
-    line-height: 150%;
-    
-}
-
-.text-buutton-i .card-button{
-    justify-content: left;
-}
-
-.cards{
-    width: 70%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    margin-bottom: 10px;
-}
-
-.top{
-    margin-top: 10%;
-}
-
-.flexDirection{
-    flex-direction: column;
-    padding: 13px;
-}
-
-
-.card{
-    width: 80%;
-    height: 240px;
-    background-color: $black-dark-2;
-    background: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
-    border-radius: 5px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    margin-top: 20px;
-    
-    .img-1{
-        width: 110%;
-        height: 102%;
-        background: 
-        linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/imobiliaria.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        transition: 1s;
-    }
-    .img-2{
-        width: 110%;
-        height: 110%;
-        background: 
-        linear-gradient(to bottom, rgba(10, 12, 12, 0.623), rgba(16, 110, 98, 0.1)), url(/assets/images/clonegoogle.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        transition: 1s;
-    }
-    .img-3{
-        width: 110%;
-        height: 110%;
-        background: 
-        linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/thservices.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        transition: 1s;
-    }
-    .img-4{
-        width: 110%;
-        height: 110%;
-        background: 
-        linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(8, 48, 42, 0.199)), url(/assets/images/project-babearia.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        transition: 1s;
-    }
-    .img-5{
-        width: 110%;
-        height: 110%;
-        background: 
-        linear-gradient(to bottom, rgba(10, 12, 12, 0.425), rgba(9, 82, 71, 0.199)), url(/assets/images/dsin.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        transition: 1s;
-    }
-    
-    .align-img{
-        width: 110%;
-        height: 110%;
-    }
-
-
-}
-.responsive{
-    width: 60%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.mobile{
-    border-radius: 10px;
-    width: 300px;
-    height: 520px;
-}
-
-.card:hover .img-info {
-    top: -5px;
-  }
-  .card:hover img{
-      width: 115%;
-      height: 115%;
-  } 
-
-.text-buutton-i .card-button button{
-    transition: 1.3s;
-}
-.text-buutton-i .card-button button:hover{
-    background-color: $equdor-light;
-    transform: translateY(0) scale(1.1);  
-}
-
-.card-services{
-    width: 100%;
-    height: auto;
-    background-color: $black-dark-2;
-    border-radius: 25px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 20px;
-    transition: 2s;
-    border: 3px solid transparent;
-
-    img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .align-img{
-        width: 120%;
-        height: 120%;
-    }
-
-    .icone{
-        height: 40px;
-     }
-
-     
- h2{
-    text-align: center;
-    color: $white-light;
-    margin-top: 30px;
-}
-p{
-    max-width: 70%;
-    color: $white-light;
-    text-align: center;
-    margin-top: 5%;
-}
-
-.card-button{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    
-    button{
-        width: 150px;
-        padding: 15px;
-        color: $primary-normal;
-        background-color: $equdor-normal;
-        border: 0;
-        font-weight: bold;
-        border-radius: 200px;
-        box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
-        cursor: pointer;
-        transition: 2s;
-       
-    }
-  }  
-}
-
-.card-services:hover{
-    border-color:$equdor-normal;
-}
-
-.card-button button:hover{
-    background-color: $equdor-light;
-    transform: translateY(0) scale(1.1);   
-}
-
-.card .icone{
-   height: 40px;
-}
-
-.card h2{
-    text-align: center;
-    color: $white-light;
-    margin-top: 30px;
-}
-.card p{
-    max-width: 70%;
-    color: $white-light;
-    text-align: center;
-    margin-top: 5%;
-}
-
-.card-button{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    
-    button{
-        width: 150px;
-        padding: 15px;
-        color: $primary-normal;
-        background-color: $equdor-normal;
-        border: 0;
-        font-weight: bold;
-        border-radius: 200px;
-        box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
-        cursor: pointer;
-    }
-}
-
-.group-card-i{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-
-.group-card{
-    width: 100%;
-    display: flex;
-}
-
-
-.card .img-info{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 150%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: 
-      linear-gradient(to bottom, rgba(22, 207, 198, 0.863), rgba(16, 110, 98, 0.1));
-    transition: 1.3s;
-
-    h5{
-     opacity: 1;
-     text-align: center;
-     color: #fff;
-    } 
-    p{
-        font-size: 14px;
-    }
-    .edit{
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
-        border-radius: 50%;
-        margin-top: 10px;
-        display: flex;
-        justify-content:center ;
-        align-items: center;
-        cursor: pointer;
-
-        i{
-            font-size: 12px;
-        }
-    }
-
-}
-.cards .card:hover .img-1, 
-.cards .card:hover .img-2,
-.cards .card:hover .img-3,
-.cards .card:hover .img-4,
-.cards .card:hover .img-5{
-    width: 115%;
-    height: 115%;
-}
-
-.contact{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-
-    .message-group{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .whatzap-i, .email-i{
-        width: 500;
-        height: 200px;
-        border: 2px solid $equdor-normal;
-        margin: 30px;
-        display: flex;
-        padding: 0 25px;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        transition: 0.8s;
-       img{
-        width: 50%;
-       }
-       p{
-        margin-top: 30%;
-       }
-
-       i{
-        font-size: 40px;
-        color:$equdor-normal
-       }
-    }
-
-  }
-
-  .email-i:hover, .whatzap-i:hover{
-    background: 
-    linear-gradient(to bottom, rgba(22, 207, 198, 0.863), rgba(16, 110, 98, 0.1));
-  }
-  
-  .contact-group{
-      width: 100%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-  }
-  
-  .group-input{
+ .group-col {
      width: 100%;
-     width: auto;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .avatar-i {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .avatar-i .img-avatar {
+     width: 180px;
+     height: 180px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     overflow: hidden;
+     border-radius: 50%;
+     border: 8px solid $equador-normal;
+     box-shadow: -5px 5px 25px $equador-light;
+
+     img {
+         width: inherit;
+         transform: scale(1.2);
+     }
+ }
+
+ .text-button-i {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .text-button-i h1 {
+     width: 100%;
+     text-align: left;
+     margin-top: 10px;
+ }
+
+ .text-button-i h3 {
+     color: $white-light;
+     font-weight: bold;
+ }
+
+ .text-button-i p {
+     color: $white-light-2;
+     margin-top: 10px;
+     max-width: 80%;
+     line-height: 150%;
+
+ }
+
+ .text-button-i .card-button {
+     justify-content: left;
+ }
+
+
+ .cards {
+     width: 70%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 10px;
+ }
+
+ .top {
+     margin-top: 10%;
+ }
+
+ .flexDirection {
+     flex-direction: column;
+     padding: 13px;
+ }
+
+ .flex-wrap {
+     width: 100%;
+     flex-wrap: wrap;
+ }
+
+ .card-services {
+     width: 40%;
+     height: auto;
+     background-color: $black-dark-2;
+     border-radius: 25px;
      margin: 10px;
      display: flex;
      justify-content: center;
+     align-items: center;
+     position: relative;
      margin-top: 20px;
-  
-     input{
-      margin: 8px;
-      width: 250px;
-      height: 30px;
-      padding: 5px;
-      border: 0;
-      color: $white-light;
-      background-color: $primary-normal;
-      outline: none;
-      border-bottom: 2px solid $equdor-light;
-      transition: 0.8s ease-in-out;
-   }
+     transition: 2s;
+     border: 3px solid transparent;
 
-   input:focus{
-    transform:  translateY(-15px);
-    animation: border-animation 1s ;
-   }
 
-   ::-webkit-input-placeholder {
-      color: $white-light-3;
-      font-weight: bold;
-   }
-   
-   @keyframes border-animation{
-     from{
-      border-bottom: 3px solid $equdor-light;
-     }
-
-     to{
-        border-bottom: 3px solid $equdor-normal;
-     }
-   }
-   
-  
-   textarea{
-      width: 93%;
-      color: $white-light;
-      background-color: $primary-normal;
-      outline: none;
-      border: 0;
-      padding: 10px;
-      border: 2px solid $equdor-light;
-      transition: 2s ease-in-out;
-   }
-
-   textarea:focus{
-     transform:  translateY(-15px);
-     border: 2px solid $equdor-normal;
-   }
-  
-   button{
-      width: 150px;
-      height: 50px;
-      margin-top: 10px;
-      background-color: $equdor-normal;
-      border: 0;
-      padding: 20 25px;
-      border-radius: 25px;
-      box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
-      cursor: pointer;
-      transition: 1s;
-   }
-
-   
-   button:hover{
-     transform: translate(0) scale(1.1);
-     background-color: $equdor-light;
-   }
-  }
-   
-
-.footer{
-   width:100%;
-   height: 100px;
-   background-color: $black-dark-3;
-}
-
-.footer .footer-group{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: $white-light;
-    p{
-        font-size: 16px;
-    }
-    
-}
-
-.down-i{
-    width: 50px;
-    height: 50px;
-    background-color: $equdor-normal;
-    margin-top: 20px;
-    border-radius: 15px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    i{
-        color: $black-dark;
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 758px){
-    .cards{
-        flex-direction: column; 
-        .card{
-            width: 100%;
-            .img{
-              width: 20%;
-            }
-        }
-    } 
-
-    .responsive{
-        width: 100%;
-    }
-    
-    .text-buutton-i p{
-        font-size: 16px;
-    }
-
-    .card-services p{
-        font-size: 16px;
-    }
-    
-    .footer{
-        background-color: transparent;
-        height:auto;
-    }
-    
-    .footer-group{
-        flex-direction: column;
-    }
-    .group-col{
-        margin-top: 40%;
-        flex-direction: column;
-         h1{
-            text-align: center;
-        }
-        h3{
-            text-align: center;
-        }
-        p{
-            max-width: 100%;
-          text-align: center;
-        }
-        .card-button{
-            justify-content: center;
-        }
-    }
-    
-    .avatar-i .img-avatar{
-        width: 200px;
-        height: 200px;
-
-        img{
-            width: 90%;
-        }
-    }
-    .contact-group{
-        margin-top: 20%;
-      }
-
-    .group-input{
-        margin: 3px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-     
-        input{
+     img {
          width: 100%;
-         margin: 8px;
-       }  
-    }  
-    .message-group{
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-    } 
-}
-
-@media screen and (max-width: 400px) {
-     .col-i{
-        width: 100%;
-        h1{
-           font-size: 16px;
-        }
+         height: 100%;
      }
-}
+
+     .align-img {
+         width: 120%;
+         height: 120%;
+     }
+
+     .icone {
+         height: 40px;
+     }
+
+
+     h2 {
+         text-align: center;
+         color: $white-light;
+         margin-top: 30px;
+     }
+
+     p {
+         max-width: 70%;
+         color: $white-light;
+         text-align: center;
+         margin-top: 5%;
+     }
+
+     .card-button {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         margin-top: 5%;
+
+         button {
+             width: 150px;
+             padding: 15px;
+             color: $primary-normal;
+             background-color: $equador-normal;
+             border: 0;
+             font-weight: bold;
+             border-radius: 200px;
+             box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
+             cursor: pointer;
+             transition: 2s;
+
+         }
+     }
+ }
+
+ .card-services:hover {
+     border-color: $equador-normal;
+ }
+
+ .card-button button:hover {
+     background-color: $equador-light;
+     transform: translateY(0) scale(1.1);
+ }
+
+ .card-button {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 5%;
+
+     button {
+         width: 150px;
+         padding: 15px;
+         color: $primary-normal;
+         background-color: $equador-normal;
+         border: 0;
+         font-weight: bold;
+         border-radius: 200px;
+         box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
+         cursor: pointer;
+     }
+ }
+
+ .group-card-i {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .group-card {
+     width: 100%;
+     display: flex;
+ }
+
+ .card .img-info {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 150%;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background:
+         linear-gradient(to bottom, rgba(22, 207, 198, 0.863), rgba(16, 110, 98, 0.1));
+     transition: 1.3s;
+
+     h5 {
+         opacity: 1;
+         text-align: center;
+         color: #fff;
+     }
+
+     p {
+         font-size: 14px;
+     }
+
+     .edit {
+         width: 50px;
+         height: 50px;
+         background-color: #fff;
+         border-radius: 50%;
+         margin-top: 10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+
+         i {
+             font-size: 12px;
+         }
+     }
+
+ }
+
+ .col-i .group-searches-row {
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+
+     button {
+         padding: 15px 30px;
+         cursor: pointer;
+         background-color: $equador-light;
+         border-radius: 10px;
+         outline: none;
+         border: 0;
+         margin: 10px;
+         box-shadow: 0px -1px 17px -4px $equador-normal;
+         transition: 0.8s;
+     }
+
+     button:hover {
+         background-color: $equador-normal;
+         transform: translateY(0) scale(1.1);
+
+     }
+
+     .active-search {
+         background-color: $equador-normal;
+     }
+ }
+
+ .col-i .cards-portifolio {
+     width: 100%;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 10px;
+
+     .card--portifolio {
+         width: 100%;
+         cursor: pointer;
+         overflow: hidden;
+         position: relative;
+         border-bottom: 7px solid $equador-normal;
+
+         img {
+             width: 105%;
+             height: 105%;
+         }
+
+         .card--dark {
+             width: 100%;
+             height: 100%;
+             position: absolute;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             margin: auto;
+             background:
+                 linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+         }
+
+         .card--hover {
+             width: 100%;
+             height: 100%;
+             position: absolute;
+             z-index: 10;
+             top: 600px;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             margin: auto;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             transition: 0.8s;
+             background:
+                 linear-gradient(rgba(16, 223, 223, 0.5), rgba(16, 223, 223, 0.5));
+
+             .hover-info {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 flex-direction: column;
+                 padding: 20px;
+
+                 h5 {
+                     font-size: 18px;
+                     color: #fff;
+                     font-weight: 300;
+                 }
+
+                 p {
+                     margin-top: 5px;
+                     color: #fff;
+                     font-weight: 300;
+                 }
+
+                 .button-portifolio {
+                     margin-top: 20px;
+                     padding: 10px;
+                     font-size: 12px;
+                     background-color: aqua;
+                     color: #000;
+                     border: 0;
+                     border-radius: 25px;
+                     outline: none;
+                     cursor: pointer;
+                 }
+             }
+
+
+             .button-portifolio:hover {
+                 background-color: $equador-light;
+                 transform: translateY(0) scale(1.1);
+             }
+         }
+
+     }
+
+     .card--portifolio:hover .card--hover {
+         top: 0;
+     }
+
+
+ }
+
+
+ .contact {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+
+     .message-group {
+         width: 100%;
+         height: auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .whatzap-i,
+     .email-i {
+         width: 500;
+         height: 200px;
+         border: 2px solid $equador-normal;
+         margin: 30px;
+         display: flex;
+         padding: 0 25px;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         transition: 0.8s;
+
+         img {
+             width: 50%;
+         }
+
+         p {
+             margin-top: 30%;
+         }
+
+         i {
+             font-size: 40px;
+             color: $equador-normal
+         }
+     }
+
+ }
+
+ .email-i:hover,
+ .whatzap-i:hover {
+     background:
+         linear-gradient(to bottom, rgba(22, 207, 198, 0.863), rgba(16, 110, 98, 0.1));
+ }
+
+ .contact-group {
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ form {
+     width: 60%;
+     height: auto;
+
+     .group-input {
+         width: 100%;
+         display: flex;
+         gap: 50px;
+         margin-top: 30px;
+
+         .verify-input {
+             width: 100%;
+
+             input,
+             textarea {
+                 width: 100%;
+                 background-color: transparent;
+                 outline: none;
+                 border: 0;
+                 color: #fff;
+                 border-bottom: 2px solid $equador-light;
+                 padding: 10px 10px;
+                 transition: 0.8s;
+             }
+             .error-input{
+                border-bottom: 1px solid red;
+             }
+             span{
+                color:  red;
+                font-size: 12px;
+                visibility: hidden;
+             }
+
+             textarea {
+                 border: 2px solid $equador-light;
+             }
+
+             input:hover,
+             textarea:hover {
+                 border-color: $equador-normal;
+             }
+
+         }
+     }
+
+     button {
+         width: 150px;
+         height: 50px;
+         margin-top: 10px;
+         background-color: $equador-normal;
+         border: 0;
+         padding: 20 25px;
+         border-radius: 25px;
+         box-shadow: 0px -1px 17px -4px rgb(16, 223, 223);
+         cursor: pointer;
+         transition: 1s;
+     }
+     button:hover {
+        transform: translate(0) scale(1.1);
+        background-color: $equador-light;
+    }
+ }
+
+ .footer {
+     width: 100%;
+     height: 100px;
+     background-color: $black-dark-3;
+ }
+
+ .footer .footer-group {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     color: $white-light;
+
+     p {
+         font-size: 16px;
+     }
+ }
+
+ .down-i {
+     width: 50px;
+     height: 50px;
+     background-color: $equador-normal;
+     margin-top: 20px;
+     border-radius: 15px;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     i {
+         color: $black-dark;
+         font-size: 30px;
+     }
+ }
+
+ .whatzapp {
+     width: 100px;
+     height: 100px;
+     position: fixed;
+     bottom: 80px;
+     right: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     a {
+         display: flex;
+         justify-content: center;
+         align-items: baseline;
+
+         i {
+             font-size: 50px;
+             color: $equador-normal;
+             transition: all 1s;
+         }
+     }
+
+     .legend {
+         display: inline-block;
+         position: absolute;
+         width: 140px;
+         font-size: 12px;
+         bottom: -15px;
+         text-align: center;
+         visibility: hidden;
+         border: 3px solid $equador-normal;
+         transition: all 1s;
+         border-top-right-radius: 25px;
+         border-bottom-right-radius: 25px;
+         border-top-left-radius: 25px;
+         border-bottom-left-radius: 25px;
+         padding: 5px 0;
+     }
+
+     a i:hover {
+         transform: scale(1.2);
+     }
+
+     a:hover .legend {
+         visibility: visible;
+
+     }
+ }
+
+
+ @media screen and (max-width: 758px) {
+     .col-i .cards-portifolio {
+         grid-template-columns: repeat(1, 1fr);
+
+     }
+
+     .col-i .group-searches-row button {
+         padding: 15px 20px;
+     }
+
+     .card-services {
+         width: 90%;
+     }
+
+     .responsive {
+         width: 100%;
+     }
+
+     .text-buutton-i p {
+         font-size: 16px;
+     }
+
+     .card-services p {
+         font-size: 16px;
+     }
+
+     .footer {
+         background-color: transparent;
+         height: auto;
+     }
+
+     .footer-group {
+         flex-direction: column;
+     }
+
+     .group-col {
+         margin-top: 40%;
+         flex-direction: column;
+
+         h1 {
+             text-align: center;
+         }
+
+         h3 {
+             text-align: center;
+         }
+
+         p {
+             max-width: 100%;
+             text-align: center;
+         }
+
+         .card-button {
+             justify-content: center;
+         }
+     }
+
+     .avatar-i .img-avatar {
+         width: 200px;
+         height: 200px;
+
+         img {
+             width: 90%;
+         }
+     }
+
+     .contact-group {
+         margin-top: 20%;
+     }
+
+     .group-input {
+         margin: 3px;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+
+         input {
+             width: 100%;
+             margin: 8px;
+         }
+     }
+
+     .message-group {
+         display: flex;
+         width: 50%;
+         flex-direction: column;
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+     .col-i {
+         width: 100%;
+
+         h1 {
+             font-size: 16px;
+         }
+
+     }
+
+     .col-i .cards-portifolio {
+         .card--portifolio:hover .card--hover {
+             top: 0;
+         }
+     }
+ }

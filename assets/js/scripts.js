@@ -26,9 +26,7 @@ const typed = new Typed('.multiple-text', {
 });
 
 
-//Scroll
-
-        
+//Scroll      
 //efeito scroll de rolagem
 const menuItems = document.querySelectorAll('.nav-links li a');
 menuItems.forEach(item =>{
